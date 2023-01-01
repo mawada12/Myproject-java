@@ -1,7 +1,17 @@
-package assi1;
+package fawry;
 
-public interface etisalat {
+public class etisalat extends serviceproviderfactory {
 
-	void create();
+	@Override
+	public mobilerechargeservice createmobileservice() {
+		// TODO Auto-generated method stub
+		return new etisalatmobileservice();
+	}
+
+	@Override
+	public internetservices createInternetService() {
+		// TODO Auto-generated method stub
+		 return new etisalatinternetservice();
+	}
 
 }
